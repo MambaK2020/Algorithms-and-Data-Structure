@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Сложение трёх чисел</title>
+</head>
+<body>
+  <h1>Сложение трёх чисел</h1>
+  <button onclick="calculateSum()">Посчитать сумму</button>
+
+  <script>
+    function calculateSum() {
+      
+      let num1 = parseInt(prompt('Введите первое число:'));
+      let num2 = parseInt(prompt('Введите второе число:'));
+      let num3 = parseInt(prompt('Введите третье число:'));
+
+      
+      if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
+        alert('Пожалуйста, введите только числа!');
+        return;
+      }
+
+      
+      let sum = num1 + num2 + num3;
+
+      
+      alert('Сумма трёх чисел: ' + sum);
+      console.log('Сумма: ' + sum);
+    }
+  </script>
+</body>
+</html>
